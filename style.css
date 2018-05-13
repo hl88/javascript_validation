@@ -1,0 +1,239 @@
+/* main container */
+.container {
+  width: 1200px;
+  margin: auto;
+  border: 1px solid black;
+  background-color: #f9f9f9;
+}
+
+/* nav container */
+.col1 {
+  width: 180px;
+  float: left;
+  margin-left: 20px;
+}
+
+/* centre section */
+.col2 {
+  width: 760px;
+  float: left;
+  border: 1px solid black;
+  margin-right: 20px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 10px;
+}
+
+/* side panel */
+.col3 {
+  width: 200px;
+  float: left;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+div p {
+  margin: 10px;
+}
+
+/* background photo */
+div#coverphoto {
+  background-image: url("images/coverphoto_no background.50.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-blend-mode:luminosity;
+}
+
+h1 {
+  color: white;
+  vertical-align: middle;
+}
+
+/* side panel */
+aside.col3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px auto 35px;
+  height: 500px;
+}
+
+/* error messages during validation */
+#errorMessages {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 10px 35px 10px;
+}
+
+#errors {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 15px 10px 35px 10px;
+}
+
+/* header styling */
+header {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+  background-color: rgb(51, 51, 51);
+  vertical-align: middle;
+}
+
+/* unordered list in nav bar */
+nav ul {
+  border: 1px solid black;
+  width: 150px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e4e4e4;
+}
+
+/* anchor tag in nav bar */
+nav li a {
+  display: block;
+  color: #222222;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* changes colour when hovering over nav bar */
+nav li a:hover {
+  background-color: #8d8c8c;
+  color: lightgray;
+}
+
+/* shows active page */
+nav li .active {
+  background-color: #666666;
+  color: lightgray;
+}
+
+/* main body text in index.html */
+div section p {
+  font-size: 23px;
+  text-align: left;
+  margin-right: 30px;
+  margin-left: 20px;
+  font-family: serif;
+}
+
+/* best browser to use */
+div section p#browser {
+  font-size: 17px;
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+}
+
+footer {
+  color: #FFFFee;
+  text-align: left;
+  clear: both;
+  font-size: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: rgb(138, 138, 138);
+}
+
+/* input font */
+section #form label, input {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+/* form heading */
+section #form label, input, h2 {
+  margin-left: 20px;
+}
+
+/* form background */
+div section#formBackground {
+  background-color: rgba(255,255,255,0.7);
+  border: 1px solid black;
+}
+
+/* figure styling */
+figure {
+  float: left;
+  height: 175px;
+  margin: 1em 2em 0 0;
+}
+
+/* image styling */
+figure img {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* figure caption */
+figure figcaption {
+  width: 200px;
+  font-size: 0.7em;
+  padding: 5px;
+  margin-left: -1000em;
+  margin-top: -20px;
+  background-color: #ffa;
+  border: 1px solid #ffad33;
+  border-radius: 5px;
+  position: absolute;
+}
+
+/* figure hover */
+figure:hover figcaption {
+  margin-left: 50px;
+}
+
+/* background panel for images */
+#popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  cursor: default;
+  z-index: 1000;
+}
+
+/* image width */
+#popup .image {
+  max-width: 1000px;
+}
+
+/* background for close button */
+#popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  font: bold 24px arial, sans-serif;
+  color: white;
+  background-color: darkred;
+  padding: 2px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+/* background for images */
+#popupbg {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+

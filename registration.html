@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>REGISTRATION: Li</title>
+  <link rel="stylesheet" href="normalize1.css" type="text/css">
+</head>
+
+<body>
+
+  <header>
+    <h1>LEAN AND MEAN</h1>
+  </header>
+
+  <!-- background photo -->
+  <div class="container" id="coverphoto">
+
+      <br> <br> <br> 
+
+      <!-- navigation bar -->
+      <nav class="col1">
+        <ul>
+          <li>
+            <a href="registration.html" class="active">Registration</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main body -->
+      <section class="col2" id="formBackground">
+
+        <h2>Signup</h2>
+
+        <!-- sign up form -->
+        <form name="signup" id="form" action="https://httpbin.org/post" method="post" onsubmit="return formValidation();">
+
+          <!-- accepts input for first name -->
+          <label class="required" for="fName">First Name</label>
+          <input type="text" required="required" name="fName" id="fName"><br><br>
+
+          <!-- accepts input for last name -->
+          <label class="required" for="lName">Last Name</label>
+          <input type="text" required="required" name="lName" id="lName"><br><br>
+
+          <!-- accepts input for username -->
+          <label class="required" for="username">Username</label>
+          <input type="text" required="required" name="username" id="username" onchange="validateUsername();"><br><br>
+
+          <!-- accepts input for password -->
+          <label class="required" for="password">Password</label>
+          <input type="password" required="required" name="password" id="password" onchange="validatePassword();"><br><br>
+
+          <!-- accepts input for password matching -->
+          <label class="required" for="passwordRepeat">Password</label>
+          <input type="password" required="required" name="passwordRepeat" id="passwordRepeat" onchange="validatePasswordRepeat();"><br><br>
+
+          <!-- dropdown menu for provinces -->
+          <label class="required" for="provinces">Provinces</label>
+          <select name="provinces" id="provinces">
+            <option value="1">Ontario</option>
+            <option value="2">Quebec</option>
+            <option value="3">Nova Scotia</option>
+            <option value="4">New Brunswick</option>
+            <option value="5">Manitoba</option>
+            <option value="6">British Columbia</option>
+            <option value="7">Prince Edward Island</option>
+            <option value="8">Saskatchewan</option>
+            <option value="9">Alberta</option>
+            <option value="10">Newfoundland &amp; Labrador</option>
+            <option value="11">Northwest Territories</option>
+            <option value="12">Yukon</option>
+            <option value="13">Nunavut</option>
+          </select><br><br>
+
+          <!-- accepts input for unit number -->
+          <label class="required" for="unitNumber">Unit Number</label>
+          <input type="number" required="required" name="unitNumber" id="unitNumber"><br><br>
+
+          <!-- accepts input for street number -->
+          <label class="required" for="streetNumber">Street Number</label>
+          <input type="number" required="required" name="streetNumber" id="streetNumber"><br><br>
+
+          <!-- accepts input for street name -->
+          <label class="required" for="streetName">Street Name</label>
+          <input type="text" required="required" name="streetName" id="streetName" onchange="validateStreetName();"><br><br>
+
+          <!-- accepts input for city -->
+          <label class="required" for="city">City</label>
+          <input type="text" required="required" name="city" id="city" onchange="validateCity();"><br><br>
+
+          <!-- accepts input for postal code -->
+          <label class="required" for="postalCode">Postal Code</label>
+          <input type="text" required="required" name="postalCode" id="postalCode" onchange="validatePostalCode();"><br><br>
+
+          <!-- accepts input for email -->
+          <label class="required" for="email">Email</label>
+          <input type="email" required="required" name="email" id="email"><br><br>
+
+          <!-- accepts input for phone -->
+          <label class="required" for="phone">Phone</label>
+          <input type="tel" required="required" name="phone" id="phone" onchange="validatePhoneNumber();"><br><br>
+
+          <!-- submit button  -->
+          <input type="submit" value=" Submit ">
+
+          <!-- reset button clears the form  -->
+          <input type="reset" value=" Reset " onclick="clearForm();"><br><br>
+
+          <!-- hidden type for my last name and student number  -->
+          <input type="hidden" name="lastName" id="lastName" value="Li" />
+          <input type="hidden" name="studentId" id="studentId" value="048533897" />
+
+        </form><br>
+
+      </section>
+
+      <!-- side panel -->
+      <aside class="col3">
+
+        <!-- prints error messages based on validation -->
+        <h2 id="errorMessages">Messages</h2>
+        <div id="errors"></div>
+      </aside>
+
+      <div class="clear"></div><br><br><br><br>
+
+      <footer>
+        <h2>&copy; 2018 Henry Li</h2>
+      </footer>
+
+  </div>
+
+  <script src="registration.js"></script>
+
+  </body>
+
+  </html>
